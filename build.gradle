@@ -18,7 +18,7 @@ subprojects {
     }
 
     vaadin {
-        version = "7.7.7"
+        version = "8.1.4"
         logToConsole = true
     }
 
@@ -56,6 +56,11 @@ project(":addon") {
 
     dependencies {
         testCompile "junit:junit:4.12"
+		
+	    //compileOnly group:'com.vaadin', name:'vaadin-compatibility-server', version:vaadin.version
+		compileOnly group:'com.vaadin', name:'vaadin-compatibility-client', version:vaadin.version
+		//compileOnly group:'com.vaadin', name:'vaadin-compatibility-client-compiled', version:vaadin.version
+		//compileOnly group:'com.vaadin', name:'vaadin-compatibility-themes', version:vaadin.version
     }
 
     jar {
@@ -78,6 +83,12 @@ project(":demo") {
     dependencies {
         compile project(":addon")
         compile group: 'com.google.guava', name: 'guava', version: '21.0'
+		
+		//compileOnly group:'com.vaadin', name:'vaadin-client-compiler', version:vaadin.version
+	    //compile group:'com.vaadin', name:'vaadin-compatibility-server', version:vaadin.version
+		compileOnly group:'com.vaadin', name:'vaadin-compatibility-client', version:vaadin.version
+		compileOnly group:'com.vaadin', name:'vaadin-compatibility-client-compiled', version:vaadin.version
+		//compile group:'com.vaadin', name:'vaadin-compatibility-themes', version:vaadin.version
     }
 
     war.enabled = true
