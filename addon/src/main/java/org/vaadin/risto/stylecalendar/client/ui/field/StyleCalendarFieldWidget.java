@@ -150,7 +150,8 @@ public class StyleCalendarFieldWidget extends TextBox
         private boolean hiding = false;
 
         public CustomPopup() {
-            super(true, false, true); // autoHide, not modal, dropshadow
+            //super(true, false, true); // autoHide, not modal, dropshadow
+			super(true, false); // autoHide, not modal
             setOwner(StyleCalendarFieldWidget.this);
         }
 

@@ -210,7 +210,7 @@ public class StyleCalendarField extends AbstractField<Date>
         @Override
         public Date convertToModel(String value,
                 Class<? extends Date> modelClass, Locale locale) throws
-                com.vaadin.data.util.converter.Converter.ConversionException {
+                com.vaadin.v7.data.util.converter.Converter.ConversionException {
             DateFormat format = DateFormat
                     .getDateInstance(DateFormat.SHORT, locale);
             try {
@@ -223,7 +223,7 @@ public class StyleCalendarField extends AbstractField<Date>
         @Override
         public String convertToPresentation(Date value,
                 Class<? extends String> presentationClass, Locale locale) throws
-                com.vaadin.data.util.converter.Converter.ConversionException {
+                com.vaadin.v7.data.util.converter.Converter.ConversionException {
             if (value == null) {
                 if (field.getNullRepresentation() != null) {
                     return field.getNullRepresentation();
