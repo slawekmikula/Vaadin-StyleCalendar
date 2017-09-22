@@ -9,8 +9,8 @@ import java.util.Locale;
 import org.vaadin.risto.stylecalendar.client.shared.field.StyleCalendarFieldRpc;
 import org.vaadin.risto.stylecalendar.client.shared.field.StyleCalendarFieldState;
 
-import com.vaadin.data.util.converter.Converter;
-import com.vaadin.ui.AbstractField;
+import com.vaadin.v7.data.util.converter.Converter;
+import com.vaadin.v7.ui.AbstractField;
 import com.vaadin.ui.Component;
 import com.vaadin.ui.HasComponents;
 

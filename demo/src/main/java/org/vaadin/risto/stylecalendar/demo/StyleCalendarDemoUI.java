@@ -12,21 +12,21 @@ import org.vaadin.risto.stylecalendar.StyleCalendar;
 import org.vaadin.risto.stylecalendar.StyleCalendarField;
 
 import com.vaadin.annotations.Theme;
-import com.vaadin.data.Item;
-import com.vaadin.data.Property;
+import com.vaadin.v7.data.Item;
+import com.vaadin.v7.data.Property;
 import com.vaadin.server.Page;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.ui.Alignment;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Button.ClickEvent;
-import com.vaadin.ui.CheckBox;
-import com.vaadin.ui.HorizontalLayout;
-import com.vaadin.ui.Label;
+import com.vaadin.v7.ui.CheckBox;
+import com.vaadin.v7.ui.HorizontalLayout;
+import com.vaadin.v7.ui.Label;
 import com.vaadin.ui.Layout;
-import com.vaadin.ui.NativeSelect;
+import com.vaadin.v7.ui.NativeSelect;
 import com.vaadin.ui.Panel;
 import com.vaadin.ui.UI;
-import com.vaadin.ui.VerticalLayout;
+import com.vaadin.v7.ui.VerticalLayout;
 import com.vaadin.ui.themes.ValoTheme;
 
 @Theme("demo")

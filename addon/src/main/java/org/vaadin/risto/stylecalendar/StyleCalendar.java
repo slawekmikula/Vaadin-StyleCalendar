@@ -14,7 +14,7 @@ import org.vaadin.risto.stylecalendar.client.ui.calendar.data.StyleCalendarContr
 import org.vaadin.risto.stylecalendar.client.ui.calendar.data.StyleCalendarDay;
 import org.vaadin.risto.stylecalendar.client.ui.calendar.data.StyleCalendarWeek;
 
-import com.vaadin.ui.AbstractField;
+import com.vaadin.v7.ui.AbstractField;
 
 /**
  * StyleCalendar is designed to be a simple, easily stylable calendar component.

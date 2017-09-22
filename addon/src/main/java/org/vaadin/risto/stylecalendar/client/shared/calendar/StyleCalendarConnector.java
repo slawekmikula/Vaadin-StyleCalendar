@@ -19,7 +19,7 @@ import com.google.gwt.user.client.ui.Widget;
 import com.vaadin.client.TooltipInfo;
 import com.vaadin.client.communication.RpcProxy;
 import com.vaadin.client.communication.StateChangeEvent;
-import com.vaadin.client.ui.AbstractFieldConnector;
+import com.vaadin.v7.client.ui.AbstractFieldConnector;
 import com.vaadin.shared.ui.Connect;
 
 @Connect(StyleCalendar.class)

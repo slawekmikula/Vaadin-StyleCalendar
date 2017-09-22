@@ -1,6 +1,6 @@
 package org.vaadin.risto.stylecalendar.client.shared.field;
 
-import com.vaadin.shared.AbstractFieldState;
+import com.vaadin.v7.shared.AbstractFieldState;
 
 public class StyleCalendarFieldState extends AbstractFieldState {
 

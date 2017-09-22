@@ -4,12 +4,12 @@ import org.vaadin.risto.stylecalendar.StyleCalendarField;
 
 import com.vaadin.annotations.Theme;
 import com.vaadin.server.VaadinRequest;
-import com.vaadin.ui.AbstractField;
+import com.vaadin.v7.ui.AbstractField;
 import com.vaadin.ui.Component;
 import com.vaadin.ui.Panel;
-import com.vaadin.ui.TextField;
+import com.vaadin.v7.ui.TextField;
 import com.vaadin.ui.UI;
-import com.vaadin.ui.VerticalLayout;
+import com.vaadin.v7.ui.VerticalLayout;
 
 @Theme("demo")
 public class StyleCalendarFieldFullWidthUI extends UI {
