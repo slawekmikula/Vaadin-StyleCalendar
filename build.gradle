@@ -9,6 +9,7 @@ subprojects {
 
     apply plugin: 'java'
     apply plugin: 'fi.jasoft.plugin.vaadin'
+    apply plugin: 'maven-publish'
 
     repositories {
         mavenCentral()
@@ -18,7 +19,7 @@ subprojects {
     }
 
     vaadin {
-        version = "8.1.4"
+        version = "8.8.5"
         logToConsole = true
     }
 
@@ -30,15 +31,23 @@ subprojects {
     sourceCompatibility = "1.8"
     targetCompatibility = "1.8"
 
-    group = "org.vaadin.risto.${baseNameLower}"
+    group = "org.vaadin.risto.stylecalendar"
 
     //creates archives named "name-version.jar" and "name.war" where name is the name of the main project
     archivesBaseName = baseNameLower
+
+    publishing {
+        publications {
+            mavenJava(MavenPublication) {
+                from components.java
+            }
+        }
+    }
 }
 
 //addon project, only creates the Directory-compatible JAR
 project(":addon") {
-    version = "2.3.0"
+    version = "2.3.0-vaadin8"
 
     vaadin {
         addon {
@@ -51,14 +60,14 @@ project(":addon") {
 
     vaadinCompile {
         manageWidgetset = false
-        widgetset = "${group}.${baseNameUpper}Widgetset"
+        widgetset = "${group}.StyleCalendarWidgetset"
     }
 
     dependencies {
         testCompile "junit:junit:4.12"
 		
-	    //compileOnly group:'com.vaadin', name:'vaadin-compatibility-server', version:vaadin.version
-		compileOnly group:'com.vaadin', name:'vaadin-compatibility-client', version:vaadin.version
+	    //compile group:'com.vaadin', name:'vaadin-compatibility-server', version:vaadin.version
+	    compile group:'com.vaadin', name:'vaadin-compatibility-client', version:vaadin.version
 		//compileOnly group:'com.vaadin', name:'vaadin-compatibility-client-compiled', version:vaadin.version
 		//compileOnly group:'com.vaadin', name:'vaadin-compatibility-themes', version:vaadin.version
     }
