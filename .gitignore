@@ -10,3 +10,5 @@ target
 .idea
 styles.css.gz
 styles.css
+/.nb-gradle/
+.nb-gradle-properties
